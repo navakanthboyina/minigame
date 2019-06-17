@@ -1,0 +1,21 @@
+print("****WELCOME TO MINI GAMINIG****")
+print("press 1 for rolling dice")
+print("press 2 for guessing number")
+import random
+name=input("player's Name: ")
+choice=int(input("Enter your choice: "))
+if(choice==1):
+    w=random.choice([1,2,3,4,5,6])
+    print("your rolled number",w)
+    print("THANK YOU!! "+name+" for playing")
+elif(choice==2):
+    i=int(input("Enter your guessed number: "))
+    w=random.choice(range(1,10))
+    print("system's number is",w)
+    if(i==w):
+        print("your guess is correct")
+    else:
+        print("WRONG Guess!! better luck next time :)\n")
+    print("THANK YOU!! "+name+" for playing")
+else:
+    print("You entered wrong choice")
